@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Insert data into tables</title>
+  
+  
+	<script>
+        
+        function Assignvalues()
+        {
+            
+			document.getElementById("t1").innerHTML= document.getElementById("f_id").value;
+            document.getElementById("t2").innerHTML= document.getElementById("l_id").value;
+			document.getElementById("t3").innerHTML= document.getElementById("E_id").value;
+			document.getElementById("t4").innerHTML= document.getElementById("P_id").value;
+ 
+        }
+    </script>
+</head>
+<body>
+<style> 
+body{
+background-color : #884dff; 
+text-align:center;
+
+}
+</style>
+    <table align="center">
+	<br>
+	<br>
+	<br>
+	<br>
+	<tr>
+	<td>FirstName:</td><td> <input id="f_id" type="text" placeholder="FirstName"/></td>
+	</tr>
+
+	<tr>
+	<td>LastName:</td><td> <input id="l_id" type="text" placeholder="LastName"/></td>
+	</tr>
+	<tr>
+	<td>Email:</td><td><input id="E_id" type="text" placeholder="Email"/></td>
+	</tr>
+	<tr>
+	<td>Phone:</td><td> <input id="P_id" type="text" placeholder="Phone number"/></td>
+	</tr>
+	<tr>
+<td>	<input type=button  onclick="Assignvalues()" value="submit"></input></td>
+</tr>
+
+   
+	</table>
+	<style>
+#t01,#t01 th,#t01 td {
+    border: 1px solid black;
+	border-collapse:collapse;
+}
+</style>
+<br>
+	<br>
+	<br>
+	<br>
+
+  
+   <table width="100%" id="t01">
+   <tr>
+   <th> First Name </th>
+   <th> Last Name </th>
+   <th> Email </th>
+   <th> Phone </th>
+   </tr>
+   <tr>
+    <td id="t1"></td>
+    <td id="t2"></td>
+    <td id="t3"></td>
+	<td id="t4"></td>
+  </tr>
+  
+   </table>
+  
+ 
+</body>
+</html>
